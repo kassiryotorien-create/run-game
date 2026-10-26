@@ -1,0 +1,115 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px 16px;
+    font-family: Arial, "Meiryo", sans-serif;
+    color: #f4f7fb;
+    background: #101827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+}
+
+.game-header h1 {
+    margin: 0 0 10px;
+    font-size: clamp(28px, 5vw, 42px);
+    letter-spacing: 3px;
+}
+
+.game-header p {
+    color: #b8c7da;
+    margin-bottom: 24px;
+}
+
+.game-area {
+    width: 100%;
+    overflow: hidden;
+    border: 4px solid #34465e;
+    border-radius: 12px;
+    background: #75c9f5;
+    box-shadow: 0 12px 30px #0005;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.control-guide {
+    color: #b8c7da;
+    font-size: 14px;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+button {
+    padding: 13px 26px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#jumpButton {
+    color: #102033;
+    background: #ffd166;
+}
+
+#restartButton {
+    color: white;
+    background: #3979d6;
+}
+
+.game-footer {
+    margin-top: 22px;
+    color: #8294aa;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .game-header p {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 12px 20px;
+    }
+}

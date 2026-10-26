@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ランニングゲーム</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <header class="game-header">
+            <h1>RUNNING GAME</h1>
+            <p>障害物をジャンプでよけて、ハイスコアを目指そう！</p>
+        </header>
+
+        <section class="game-area">
+
+            <!-- ゲーム画面 -->
+            <canvas
+                id="gameCanvas"
+                width="900"
+                height="450"
+                aria-label="ランニングゲームの画面"
+            ></canvas>
+
+        </section>
+
+        <!-- 操作説明 -->
+        <section class="controls">
+            <p class="control-guide">
+                キーボード：スペースキー / ↑ キーでジャンプ
+            </p>
+
+            <div class="button-area">
+                <button id="jumpButton" type="button">
+                    ジャンプ！
+                </button>
+
+                <button id="restartButton" type="button">
+                    リスタート
+                </button>
+            </div>
+        </section>
+
+        <footer class="game-footer">
+            <p>RUN! JUMP! SURVIVE!</p>
+        </footer>
+
+    </main>
+
+    <!-- ゲームの処理 -->
+    <script src="game.js"></script>
+
+</body>
+</html>
